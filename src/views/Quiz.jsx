@@ -1,9 +1,3 @@
-export default function Quiz(){
-    return (
-        <div>Quiz</div>
-    )
-}
-
 import React, { useState } from 'react';
 import styles from './Quiz.module.css';
 
