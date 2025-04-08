@@ -1,5 +1,9 @@
 import style from './DefaultPage.module.css';
 import video from '../video/Gradient.webm';
+import png from '../image/model.png';
+import webp from '../image/model.webp';
+import React from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function DefaultPage(){
     return (
@@ -15,19 +19,12 @@ export default function DefaultPage(){
     )
 }
 
-return (
-    // Billede forskel
-    <div>
-        <div className={style.TextImages}>
-        <h2>Hvad kan vi gøre for dig?</h2>
-        <p>Vi hjælper små selvstændige tøjbutikker med at skabe hjemmesider, der ikke kun viser jeres stil, men også jeres engagement for miljøet.</p>
-        <p>Vores løsninger kombinerer grøn hosting, energieffektiv design og visuel storytelling, så jeres værdier kommer til udtryk på en måde, der både imponerer og inspirerer. 
-        Lad os sammen bygge en hjemmeside, der ikke kun sælger tøj – men fortæller historien om jeres grønne revolution.</p>
-        <button>Læs mere</button>
-        <button>Tag vores quiz</button>
-        </div>
-        <div className={style.Images}>
-        
-        </div>
-    </div>
-)
+const App = () => {
+    return (
+        <DotLottieReact
+        src="https://lottie.host/c56ffbdc-348c-4b05-9efb-dd53c4a02b93/cSEpnl8k7L.lottie"
+        loop
+        autoplay
+       />
+    );
+};
