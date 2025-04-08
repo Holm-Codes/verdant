@@ -13,6 +13,9 @@ export default function Header() {
                     <Link className={mystyle.linktext} to="/Bw">Co2-Optimeret Webdesign</Link>
                 </p>
                 <p>
+                    <Link className={mystyle.linktext} to="/Quiz">Quiz</Link>
+                </p>
+                <p>
                     <Link className={mystyle.linktext} to="/Cases">Cases</Link>
                 </p>
                 <p>

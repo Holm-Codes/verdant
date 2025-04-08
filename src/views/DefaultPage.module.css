@@ -1,0 +1,23 @@
+.Hero {
+    width: 100%;
+    text-align: center;
+}
+
+.Hero video {
+    width: 100%;
+}
+
+.HeroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.HeroText button {
+    background-color: #9FC7AA;
+    border: 0;
+    padding: 0.8rem 2rem;
+    border-radius: 0px 15px 0px 15px;
+}
