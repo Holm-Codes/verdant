@@ -7,7 +7,16 @@
 .quizContainer h1 {
     text-align: center;
     font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.quizContainer p {
+    text-align: center;
+    font-size: 25px;
     margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+
 }
 
 .quizContent {

@@ -105,7 +105,8 @@ export default function Quiz() {
 
     return (
         <div className={styles.quizContainer}>
-            <h1>Quiz om rummet</h1>
+            <h1>Velkommen til vores bæredygtighedsquiz</h1>
+            <p>Test din viden om, hvordan du kan reducere dit digitale fodaftryk og skabe en mere bæredygtig online tilstedeværelse. Lad os sammen opdage, hvordan små ændringer kan gøre en stor forskel for miljøet!</p>
             <div className={styles.quizContent}>
                 <div className={styles.astronaut}>
                     <img src="/images/Quiz-spaceman.webp" alt="Astronaut" />
