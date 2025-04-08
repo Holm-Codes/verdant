@@ -12,7 +12,7 @@
   }
   
   .formContainer {
-    background-color: #f5f5dc;
+    background-color: #EFE7DA;
     padding: 20px;
     border-radius: 10px;
     width: 400px;
@@ -39,7 +39,7 @@
   }
   
   .button {
-    background-color: #d4a373;
+    background-color: #DAD3C8;
     color: white;
     padding: 10px;
     border: none;
@@ -49,5 +49,5 @@
   }
   
   .button:hover {
-    background-color: #c09163;
+    background-color: #B29079;
   }
