@@ -1,4 +1,19 @@
 :root {
   max-width: 1440px;
-  
+
+  --black: #000000;
+  --off-white: #F9F9F9;
+  --white: #FFFFFF;
+  --brown: #B29079;
+  --light-brown: #DAD3C8;
+  --beige: #EFE7DA;
+  --light-beige: #F6F5EC;
+  --soft-green: #9FC7AA;
+  --light-green: #CFE3D4;
+  --soft-yellow: #FFC162;
+  --light-yellow: #FFE0B0;
+  --soft-pink: #EFB8D1;
+  --light-pink: #F7DBE8;
+  --soft-red: #F17D70;
+  --ligth-red: #F8BEB7;
 }
