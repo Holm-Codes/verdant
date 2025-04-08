@@ -1,0 +1,130 @@
+.quizContainer {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.quizContainer h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.quizContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.astronaut {
+    flex: 1;
+    max-width: 300px;
+}
+
+.astronaut img {
+    width: 100%;
+}
+
+.quiz {
+    flex: 2;
+    max-width: 600px;
+}
+
+.question {
+    background: #EFE7DA;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.question p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: background 0.3s;
+}
+
+.option.selected .dot {
+    background: white;
+}
+
+.nextBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #B29079;
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.nextBtn:hover:not(:disabled) {
+    background: #DAD3C8(255, 255, 255, 0.1);
+}
+
+.nextBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.results {
+    background: #DAD3C8;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.results h2 {
+    margin-bottom: 20px;
+}
+
+.results p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.restartBtn {
+    background: white;
+    color: #B29079;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.restartBtn:hover {
+    background: #DAD3C8;
+}
