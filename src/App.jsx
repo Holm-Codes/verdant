@@ -6,7 +6,7 @@ import Bw from "./views/Bw";
 import OmOs from "./views/OmOs";
 import Cases from "./views/Cases";
 import Kontakt from "./views/Kontakt";
-import Quiz from "./views/Quiz"
+import Quiz from "./views/Quiz";
 
 
 const router = createBrowserRouter([
