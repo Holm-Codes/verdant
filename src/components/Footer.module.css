@@ -1,0 +1,24 @@
+Footer {
+    background-color: #cfe3d4;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+}
+
+.bund1 {
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.5;
+}
+
+.boks1 {
+    padding-left: 2rem;
+}
+
+.boks2 {
+    padding-right: 2rem;
+    text-align: right;
+}
+
+.bund2 {
+    text-align: center;
+}
