@@ -1,11 +1,22 @@
 import style from './DefaultPage.module.css';
+import png from '../image/model.png';
+import webp from '../image/model.webp';
 
 export default function Forside2(){
     return (
-        <div className={style.forside2}>
-            <h2>Forbedr din hjemmeside, forbedr din fremtid </h2>
-            <p>Vi har hjulpet mange virksomheder med at forbedre deres hjemmesider. Vi har erfaring med at optimere hjemmesider for at maksimere brugeroplevelsen og forretningsmål. Vores ekspertise strækker sig fra grøn hosting til visuel storytelling, og vi har hjulpet virksomheder med at styrke deres digitale tilstedeværelse gennem effektiv design og teknologi. Ved at samarbejde med os kan du få en hjemmeside, der ikke kun ser godt ud, men også understøtter dine forretningsmål og bidrager til en bæredygtig fremtid.</p>
-            <button>Læs mere</button>
+        <div>
+            <div className={style.TextImages}>
+                <h2>Hvad kan vi gøre for dig?</h2>
+                <p>Vi hjælper små selvstændige tøjbutikker med at skabe hjemmesider, der ikke kun viser jeres stil, men også jeres engagement for miljøet.</p>
+                <p>Vores løsninger kombinerer grøn hosting, energieffektiv design og visuel storytelling, så jeres værdier kommer til udtryk på en måde, der både imponerer og inspirerer. Lad os sammen bygge en hjemmeside, der ikke kun sælger tøj – men fortæller historien om jeres grønne revolution.</p>
+                <button>Læs mere</button>
+                <button>Tag vores quiz</button>
+            </div>
+
+            <div className={style.Images}>
+                <img src={png} alt="image"/>
+                <img src={webp} alt="image"/>
+            </div>
         </div>
     )
 }
