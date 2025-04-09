@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import styles from './Quiz.module.css';
+import baggrund from '../image/background1.webp'
 
 const questions = [
     // Indsæt dine spørgsmål her (samme struktur som i den oprindelige kode)
@@ -57,6 +58,14 @@ const questions = [
 ];
 
 export default function Quiz() {
+    <div
+      style={{
+        backgroundImage: `url('background1.webp')`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh', // Sikrer at baggrunden dækker hele skærmen
+      }}
+    ></div>
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [selectedOption, setSelectedOption] = useState(null);
