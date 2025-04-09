@@ -13,10 +13,7 @@ export default function Header() {
             </div>
             <nav className={style.navigation}>
                 <p>
-                    <Link className={style.linktext} to="/Bw">Co2-Optimeret Webdesign</Link>
-                </p>
-                <p>
-                    <Link className={style.linktext} to="/Quiz">Quiz</Link>
+                    <Link className={style.linktext} to="/Bw">CO<sub>2</sub>-Optimeret Webdesign</Link>
                 </p>
                 <p>
                     <Link className={style.linktext} to="/Cases">Cases</Link>
