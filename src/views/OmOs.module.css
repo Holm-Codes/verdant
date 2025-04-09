@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+}
+
+.OmOsTitel{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+}
+
+.OmOsSektion{
+    margin: 0 5rem;
+}
+
+.profilImgOne{
+    width: 25rem;
+    border-radius: 50px 0;
+}
+
+.profilImgTwo{
+    width: 25rem;
+    border-radius: 0 50px;
+}
+
+.profilBoksOne{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profilTekst{
+    margin: 1rem;
+    margin-right: 10rem;
+}
+
+.profilTekst p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 2;
+    margin: 0;
+}
+
+.profilTekst h2{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+}
+
+.profilTekstTwo{
+    margin: 1rem;
+    margin-left: 10rem;
+    text-align: right;
+}
+
+.profilTekstTwo p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 2;
+    margin: 0;
+}
+
+.profilTekstTwo h2{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+}
