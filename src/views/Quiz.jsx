@@ -60,7 +60,7 @@ const questions = [
 export default function Quiz() {
     <div
       style={{
-        backgroundImage: `url('background1.webp')`,
+        backgroundImage: 'baggrund',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         minHeight: '100vh', // Sikrer at baggrunden dækker hele skærmen
