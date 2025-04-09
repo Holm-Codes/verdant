@@ -45,10 +45,10 @@ export default function DefaultPage(){
         {/* Forside Sektion 3 - Animation */}
         <section className={style.forside3}>
             <div className={style.animation}>
-                <DotLottieReact 
-                    src="https://lottie.host/284394bd-04b6-45cd-80e2-6cb95215ab35/OaYFOHpwKT.lottie"
-                    loop
-                    autoplay
+                <DotLottieReact
+                src="https://lottie.host/9f271a6e-f4b7-487e-a469-617446c9c7be/McHmMKuhz9.lottie"
+                loop
+                autoplay
                 />
             </div>
     

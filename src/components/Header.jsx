@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
 import style from "./Header.module.css";
+import logo from "../image/Logo.svg"
 
 export default function Header() {
 
     return (
         <header>
-            <nav className={style.navigation}>
+            <div className={style.logo}>
                 <p>
-                    <Link className={style.linktext} to="/">Home</Link>
+                    <Link className={style.linktext} to="/"><img src={logo} alt="image"/></Link>
                 </p>
+            </div>
+            <nav className={style.navigation}>
                 <p>
                     <Link className={style.linktext} to="/Bw">Co2-Optimeret Webdesign</Link>
                 </p>

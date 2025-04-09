@@ -1,5 +1,22 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 2.75rem;
+    padding-left: 1rem;
+}
 .navigation {
     display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .navigation p {
