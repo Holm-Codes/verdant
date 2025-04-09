@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import styles from './Quiz.module.css';
 
@@ -102,7 +103,9 @@ export default function Quiz() {
             <h1>Velkommen til vores bæredygtighedsquiz</h1>
             <p>Test din viden om, hvordan du kan reducere dit digitale fodaftryk og skabe en mere bæredygtig online tilstedeværelse. Lad os sammen opdage, hvordan små ændringer kan gøre en stor forskel for miljøet!</p>
             <div className={styles.quizContent}>
-                
+                <div className={styles.astronaut}>
+                    <img src="/images/Quiz-spaceman.webp" alt="Astronaut" />
+                </div>
                 <div className={styles.quiz}>
                     <div className={styles.question}>
                         <p>{questions[currentQuestion].question}</p>

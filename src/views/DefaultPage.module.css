@@ -14,6 +14,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 900px;
+}
+.HeroText h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
 }
 
 .HeroText button {
@@ -26,12 +32,48 @@
 /* Billede Sektion */
 .forside2 {
     margin: auto;
-    padding: 4rem;
+    padding: 5rem;
     display: flex;
+    gap: 60px;
+}
+.textImages h2 {
+    font-weight: 400;
+}
+
+.textImages p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 2;
+    margin: 0;
+}
+
+.textImages button {
+    background-color: #9FC7AA;
+    border: 0;
+    padding: 0.8rem 2rem;
+    border-radius: 0px 15px 0px 15px;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+}
+
+.images {
+    display: flex;
+    gap: 40px;
+}
+
+.images img {
+    height: 500px;
+    border-radius: 10px;
 }
 
 
 /* Animation Sektion */
-
+.forside3 {
+    margin: auto;
+    padding: 5rem;
+    display: flex;
+}
 
 /* Citat Sektion */

@@ -3,20 +3,21 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .description {
   text-align: center;
   margin-bottom: 20px;
-  max-width: 1000px;
+  max-width: 900px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .formContainer {
- background-color: #EFE7DA;
+  background-color: #EFE7DA;
   padding: 20px;
   border-radius: 10px;
-  width: 700px;
+  width: 650px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -27,11 +28,16 @@
   margin-bottom: 20px;
 }
 
+label {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .input, .textarea {
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif
 }
 
 .textarea {
@@ -46,6 +52,7 @@
   cursor: pointer;
   font-size: 1rem;
   width: 150px;
+  margin: auto;
 }
 
 .formContainerButton:hover {
