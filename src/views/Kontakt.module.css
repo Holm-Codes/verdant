@@ -3,19 +3,25 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+
+.container h2 {
   font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 .description {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
   max-width: 900px;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .formContainer {
   background-color: #EFE7DA;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 10px;
   width: 650px;
   display: flex;
@@ -26,6 +32,8 @@
 .formTitle {
   text-align: center;
   margin-bottom: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
 }
 
 label {
@@ -41,7 +49,7 @@ label {
 }
 
 .textarea {
-  height: 100px;
+  height: 75px;
 }
 
 .formContainerButton {
@@ -53,6 +61,8 @@ label {
   font-size: 1rem;
   width: 150px;
   margin: auto;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
 }
 
 .formContainerButton:hover {
