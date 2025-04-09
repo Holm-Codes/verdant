@@ -1,83 +1,48 @@
-.contactFormContainer {
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
-  
-  .contactTextContainer {
-    width: 50%;
-    padding-right: 40px;
-  }
-  
-  .contactFormTitle {
-    font-size: 26px;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .contactFormDescription {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  .formWrapper {
-    width: 50%;
-  }
-  
-  .formGroup {
-    margin-bottom: 20px;
-  }
-  
-  .formLabel {
-    display: block;
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 8px;
-  }
-  
-  .formInput,
-  .formTextarea {
-    width: 100%;
-    padding: 12px;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #333;
-    background-color: #f9f9f9;
-  }
-  
-  .formTextarea {
-    height: 120px;
-  }
-  
-  .formCheckboxLabel {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .formCheckboxInput {
-    margin-right: 8px;
-  }
-  
-  .formSubmitButton {
-    background-color: #5cb85c;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .formSubmitButton:hover {
-    background-color: #449d44;
-  }
+.KontaktForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2.5rem 5rem 2.5rem 5rem;
+}
+
+.textForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.textForm h2 {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+
+.lilleForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #EFE7DA;
+  border-radius: 10px;
+  width: 400px;
+  padding: 1.5rem;
+}
+
+.indhold .textArea{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif
+}
+
+.sendKnap {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.sendKnap button {
+  background-color: #9FC7AA;
+  border: 0;
+  padding: 0.5rem 2rem;
+  border-radius: 15px 0px 15px 0px;
+}
