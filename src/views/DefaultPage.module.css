@@ -1,3 +1,4 @@
+/* Hero sektion */
 .Hero {
     width: 100%;
     text-align: center;
@@ -21,3 +22,16 @@
     padding: 0.8rem 2rem;
     border-radius: 0px 15px 0px 15px;
 }
+
+/* Billede Sektion */
+.forside2 {
+    margin: auto;
+    padding: 4rem;
+    display: flex;
+}
+
+
+/* Animation Sektion */
+
+
+/* Citat Sektion */

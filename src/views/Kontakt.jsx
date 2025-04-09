@@ -27,7 +27,7 @@ export default function Kontakt(){
         <label htmlFor="problem">Kort om jeres problem:</label>
         <textarea id="problem" className={mystyle.textarea}></textarea>
 
-        <button className={mystyle.button}>
+        <button className={mystyle.formContainerButton}>
           Kontakt
         </button>
       </div>

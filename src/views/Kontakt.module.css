@@ -6,16 +6,19 @@
     font-family: Arial, sans-serif;
   }
   
+
+
   .description {
     text-align: center;
     margin-bottom: 20px;
+    max-width: 1000px;
   }
   
   .formContainer {
     background-color: #EFE7DA;
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -38,14 +41,15 @@
     height: 100px;
   }
   
-  .button {
+  .formContainerButton {
     background-color: #DAD3C8;
-    color: white;
+    color: black;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px 0px 15px 0px;
     cursor: pointer;
     font-size: 16px;
+    width: 150px;
   }
   
   .button:hover {

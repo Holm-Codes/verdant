@@ -1,28 +1,28 @@
 import { Link } from "react-router-dom";
-import mystyle from "./Header.module.css";
+import style from "./Header.module.css";
 
 export default function Header() {
 
     return (
         <header>
-            <nav className={mystyle.navigation}>
+            <nav className={style.navigation}>
                 <p>
-                    <Link className={mystyle.linktext} to="/">Home</Link>
+                    <Link className={style.linktext} to="/">Home</Link>
                 </p>
                 <p>
-                    <Link className={mystyle.linktext} to="/Bw">Co2-Optimeret Webdesign</Link>
+                    <Link className={style.linktext} to="/Bw">Co2-Optimeret Webdesign</Link>
                 </p>
                 <p>
-                    <Link className={mystyle.linktext} to="/Quiz">Quiz</Link>
+                    <Link className={style.linktext} to="/Quiz">Quiz</Link>
                 </p>
                 <p>
-                    <Link className={mystyle.linktext} to="/Cases">Cases</Link>
+                    <Link className={style.linktext} to="/Cases">Cases</Link>
                 </p>
                 <p>
-                    <Link className={mystyle.linktext} to="/OmOs">Om Os</Link>
+                    <Link className={style.linktext} to="/OmOs">Om Os</Link>
                 </p>
                 <p>
-                    <Link className={mystyle.linktext} to="/Kontakt">Kontakt</Link>
+                    <Link className={style.linktext} to="/Kontakt">Kontakt</Link>
                 </p>
             </nav>
         </header>

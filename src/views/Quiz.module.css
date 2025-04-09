@@ -1,18 +1,18 @@
 .quizContainer {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
 .quizContainer h1 {
     text-align: center;
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 .quizContainer p {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 40px;
     margin-left: 40px;
     margin-right: 40px;
@@ -26,18 +26,10 @@
     gap: 40px;
 }
 
-.astronaut {
-    flex: 1;
-    max-width: 300px;
-}
-
-.astronaut img {
-    width: 100%;
-}
 
 .quiz {
     flex: 2;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .question {
@@ -50,6 +42,7 @@
 .question p {
     font-size: 18px;
     margin-bottom: 30px;
+    font-weight: 800;
 }
 
 .options {
@@ -68,14 +61,14 @@
 .dot {
     width: 20px;
     height: 20px;
-    border: 2px solid white;
+    border: 2px solid #B29079;
     border-radius: 50%;
     margin-right: 15px;
     transition: background 0.3s;
 }
 
 .option.selected .dot {
-    background: white;
+    background: #B29079;
 }
 
 .nextBtn {
