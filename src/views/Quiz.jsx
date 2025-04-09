@@ -90,9 +90,11 @@ export default function Quiz() {
             <div className={styles.results}>
                 <h2>Tak fordi du quizzede med!</h2>
                 <p>Du fik {score} ud af {questions.length} rigtige svar!</p>
+                <p>Hvis du ikke har helt styr på bæredygtigt webdesign så kontakt os, vi kan hjælpe!</p>
                 <button className={styles.restartBtn} onClick={restartQuiz}>
                     Tag quizzen igen
                 </button>
+                <button><Link className={style.linktext} to="/Kontakt">Kontakt os</Link></button>
             </div>
         );
     }
