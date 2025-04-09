@@ -45,8 +45,8 @@ export default function DefaultPage(){
         {/* Forside Sektion 3 - Animation */}
         <section className={style.forside3}>
             <div className={style.animation}>
-                <DotLottieReact
-                    src="https://lottie.host/c56ffbdc-348c-4b05-9efb-dd53c4a02b93/cSEpnl8k7L.lottie"
+                <DotLottieReact 
+                    src="https://lottie.host/284394bd-04b6-45cd-80e2-6cb95215ab35/OaYFOHpwKT.lottie"
                     loop
                     autoplay
                 />
@@ -55,13 +55,13 @@ export default function DefaultPage(){
             <div className={style.forside3Tekst}>
                 <h2>Forbedr din hjemmeside, forbedr din fremtid</h2>
                 <p>Vi har hjulpet mange virksomheder med at forbedre deres hjemmesider. Vi har erfaring med at optimere hjemmesider for at maksimere brugeroplevelsen og forretningsmål. Vores ekspertise strækker sig fra grøn hosting til visuel storytelling, og vi har hjulpet virksomheder med at styrke deres digitale tilstedeværelse gennem effektiv design og teknologi. Ved at samarbejde med os kan du få en hjemmeside, der ikke kun ser godt ud, men også understøtter dine forretningsmål og bidrager til en bæredygtig fremtid.</p>
-                <button>Læs mere</button>
+                <button><Link className={style.linktext} to="/OmOs">Mød os</Link></button>
             </div>
         </section>
 
         {/* Forside Sektion 4 - Citat */}
         <section className={style.forside4}>
-            <div className={style.foside4Overskrift}>
+            <div>
                 <h2>Det siger vores kunder</h2>
             </div>
 
@@ -82,8 +82,8 @@ export default function DefaultPage(){
                 </div>
             </div>
         
-            <div>
-                <button>Udforsk cases</button>
+            <div className={style.casesKnap}>
+                <button><Link className={style.linktext} to="/Cases">Udforsk vores cases</Link></button>
             </div> 
         </section>
 

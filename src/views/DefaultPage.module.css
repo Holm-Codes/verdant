@@ -74,15 +74,16 @@
     margin: auto;
     padding: 5rem;
     display: flex;
-    justify-content: space-between;
+    gap: 60px;
 }
 
 .animation {
-
+    width: 50%;
 }
 
 .forside3Tekst {
     text-align: right;
+    width: 55%;
 }
 
 .forside3Tekst h2 {
@@ -95,6 +96,61 @@
     font-weight: 400;
     line-height: 2;
     margin: 0;
+}
 
+.forside3Tekst button {
+    background-color: #9FC7AA;
+    border: 0;
+    padding: 0.8rem 2rem;
+    border-radius: 15px 0px 15px 0px;
+    margin-top: 2rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
 }
 /* Citat Sektion */
+.forside4 {
+    margin: auto;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.forside4 h2{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.citater {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.quotes {
+    background-color: #EFE7DA;
+    border-radius: 50px 0px 50px 0px;
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.quotes h4 {
+    margin-top: 0;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.casesKnap {
+    display: flex;
+    justify-content: center;
+}
+
+.casesKnap button{
+    background-color: #9FC7AA;
+    border: 0;
+    padding: 0.8rem 2rem;
+    border-radius: 0px 15px 0px 15px;
+    margin-top: 2rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+}
