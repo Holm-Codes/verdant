@@ -1,5 +1,4 @@
-
-import styles from './KontaktForm.module';
+import styles from './KontaktForm.module.css';
 
 const ContactForm = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -16,6 +15,7 @@ const ContactForm = () => {
           Kontakt os nu og lad os hjælpe dig med at skabe en bæredygtig hjemmeside, der styrker din forretning.
         </p>
       </div>
+
       <div className={styles.formWrapper}>
         <form>
           <div className={styles.formGroup}>
@@ -50,6 +50,7 @@ const ContactForm = () => {
               className={styles.formTextarea}
             ></textarea>
           </div>
+
           <div className={styles.formGroup}>
             <label className={styles.formCheckboxLabel}>
               <input
