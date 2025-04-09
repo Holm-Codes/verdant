@@ -1,0 +1,83 @@
+.contactFormContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .contactTextContainer {
+    width: 50%;
+    padding-right: 40px;
+  }
+  
+  .contactFormTitle {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .contactFormDescription {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .formWrapper {
+    width: 50%;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formLabel {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .formInput,
+  .formTextarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .formTextarea {
+    height: 120px;
+  }
+  
+  .formCheckboxLabel {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .formCheckboxInput {
+    margin-right: 8px;
+  }
+  
+  .formSubmitButton {
+    background-color: #5cb85c;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formSubmitButton:hover {
+    background-color: #449d44;
+  }
