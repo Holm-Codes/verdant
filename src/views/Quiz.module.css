@@ -99,12 +99,14 @@
 }
 
 .results {
-    background: #DAD3C8;
+    background: #EFE7DA;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .results h2 {
@@ -117,8 +119,8 @@
 }
 
 .restartBtn {
-    background: white;
-    color: #B29079;
+    background: #DAD3C8;
+    color: #000000;
     border: none;
     padding: 12px 24px;
     border-radius: 25px;
@@ -128,5 +130,5 @@
 }
 
 .restartBtn:hover {
-    background: #DAD3C8;
+    background: #B29079;
 }

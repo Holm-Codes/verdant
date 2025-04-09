@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import png from '../image/model.png';
 import webp from '../image/model.webp';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import KontaktForm from "../components/KontaktForm";
 
 export default function DefaultPage(){
     return (
@@ -86,7 +87,7 @@ export default function DefaultPage(){
             </div> 
         </section>
 
-        {/* <KontaktForm /> */}
+        <KontaktForm />
         </>
     )
 }
