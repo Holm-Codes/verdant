@@ -50,7 +50,7 @@ const ContactForm = () => {
               className={styles.formTextarea}
             ></textarea>
           </div>
-          
+
           <div className={styles.formGroup}>
             <label className={styles.formCheckboxLabel}>
               <input
