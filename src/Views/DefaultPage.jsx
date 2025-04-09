@@ -27,9 +27,12 @@ export default function DefaultPage(){
             <div className={style.textImages}>
                 <h2>Hvad kan vi gøre for dig?</h2>
                 <p>Vi hjælper små selvstændige tøjbutikker med at skabe hjemmesider, der ikke kun viser jeres stil, men også jeres engagement for miljøet.</p>
-                <p>Vores løsninger kombinerer grøn hosting, energieffektiv design og visuel storytelling, så jeres værdier kommer til udtryk på en måde, der både imponerer og inspirerer. Lad os sammen bygge en hjemmeside, der ikke kun sælger tøj – men fortæller historien om jeres grønne revolution.</p>
-                <button>Læs mere</button>
-                <button>Tag vores quiz</button>
+                <p>Vores løsninger kombinerer grøn hosting, energieffektiv design og visuel storytelling, så jeres værdier kommer til udtryk på en måde, der både imponerer og inspirerer. Lad os sammen bygge en hjemmeside, der ikke kun sælger tøj – men fortæller historien om jeres grønne revolution.</p> 
+                <br />
+                <p>Kan du se forskel på billederne?</p>
+                <p>Den ene er en WebP-fil og den anden er en PNG-fil.</p>
+                <button><Link className={style.linktext} to="/Bw">Læs mere</Link></button>
+                <button><Link className={style.linktext} to="/Quiz">Tag quizzen</Link></button>
             </div>
         
             <div className={style.images}>
