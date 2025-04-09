@@ -17,7 +17,12 @@ export default function KontaktForm(){
 
         <label htmlFor="problem">Kort om hvad vi kan hjælpe med:</label>
           <textarea id="problem" className={style.textArea}></textarea>
-        
+
+        <div className={style.check}>
+        <input type="checkbox"  id="vilkaar" name="vilkaar" value="vilkaar"/>
+          <label for="vilkaar" className={style.container}>Jeg accepterer Verdant's vilkår og betingelser.
+          Jeg er klar over, at min kontaktinformation vil blive brugt til at kontakte mig om mit forespørgsel. </label></div>
+
         <div className={style.sendKnap}>
           <button>Send</button>
         </div>
