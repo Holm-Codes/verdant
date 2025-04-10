@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom"; // Bruger Link fra react-router-dom, så dine navigationer ikke reloader siden – de fungerer som interne links i en SPA (Single Page Application)
-import style from "./Header.module.css"; // Import af CSS-modul, ligesom du gjorde med footer'en. Alle klassenavne hentes som 'style.xxx'.
-import logo from "../image/Logo.svg" //  Importerer vores logo som en SVG-fil. 
+import style from "./Header.module.css"; // Import af CSS-modul, som ligger filen Header.module.css i samme mapppe. Alle klassenavne hentes som 'style.xxx'.
+import logo from "../image/Logo.svg" // Importerer vores logo som en SVG-fil. 
 
-export default function Header() { //
+export default function Header() { //Her defineres en funktionel komponent i React, som hedder Header, og den bliver eksporteret som standard.
 
     return (
-        <header>
-            {/*  */}
+        <header>{/* Her begynder selve HTML-udskriften. Der returneres et <header>-element, som er en semantisk HTML-tag til indhold i toppen af siden. */}
             <div className={style.logo}> {/* Logo-område: Logoet er klikbart og sender brugeren til forsiden. 'className={style.logo}' styrer layout og størrelse af logoet via CSS. */}
                 <p>
                     <Link className={style.linktext} to="/"><img src={logo} alt="Verdant logo"/></Link>

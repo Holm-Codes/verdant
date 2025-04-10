@@ -3,7 +3,7 @@ footer {
     padding: 1rem 2rem; /* Tilføjer indvendig luft (padding): 1rem op/ned og 2rem til siderne */
     border-radius: 0.4rem; /*Afrunder hjørnerne med border-radius: 0.4rem  */
 }
-/*  */
+
 .bund1 {
     display: flex; /* Flexbox layout – gør at .boks1 og .boks2 står side om side */
     justify-content: space-between; /* skubber dem ud mod hver sin side */
@@ -20,5 +20,5 @@ footer {
 }
 
 .bund2 {
-    text-align: center; /* Den nederste del (© 2025 Verdant) bliver centreret horisontalt */
+    text-align: center; /* Den nederste del (copyright) bliver centreret horisontalt */
 }

@@ -1,43 +1,46 @@
-.KontaktForm {
+.KontaktForm { 
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2.5rem 5rem 2.5rem 5rem;
+  flex-direction: row; /* Lægger elementerne vandret (row) med flexbox */
+  justify-content: space-between; /* Teksten i venstre side, kontaktformularen i højre */
+  padding: 2.5rem 5rem; 
 }
-
+/* Tekst stykket i venstre side */
 .textForm {
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  flex-direction: column; /* Placerer elementerne ovenpå hinanden */
+  width: 50%; /* Giver bredden på tekst stykket */
 }
+
 .textForm h2 {
   margin: 0;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
 }
 
+/* Kontaktformularen i miniversion */
 .lilleForm {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  background-color: #EFE7DA;
-  border-radius: 10px;
-  width: 400px;
+  flex-direction: column; /* Placerer elementerne ovenpå hinanden */
+  align-items: stretch; 
+  background-color: #EFE7DA; /* Giver formularen vores 'beige' baggrund */
+  border-radius: 0.625rem; /* Afrundet hjørner */
+  width: 25rem; /* Bredde på hele formularen */
   padding: 1.5rem;
 }
 
-.indhold .textArea{
-  padding: 10px;
-  margin-bottom: 10px;
+.indhold, .textArea{
+  padding: 0.625rem;
+  margin-bottom: 0.3rem;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   font-family: 'Times New Roman', Times, serif
 }
 
 .check label {
-  font-size: 0.8rem;
+  font-size: 0.8rem; /* Gør teksten til checkboksen mindre */
 }
 
+/* Knappen */
 .sendKnap {
   display: flex;
   justify-content: center;
@@ -45,11 +48,11 @@
 }
 
 .sendKnapButton {
-  background-color: #9FC7AA;
+   background-color: #9FC7AA; /* Giver formularen vores 'soft green' baggrund */
   font-size: 0.8rem;
   border: 0;
   padding: 0.5rem 2rem;
-  border-radius: 1rem 0;
+   border-radius: 1rem 0; /* rundede hjørner i kun én side (øvre højre og nedre venstre) */
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
 }

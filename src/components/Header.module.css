@@ -2,17 +2,18 @@ header {
     display: flex; 
     flex-direction: row; /* Lægger headeren vandret (row) med flexbox */
     align-items: center; /* Centrerer elementerne vertikalt */
-    justify-content: space-between; /*  logo i venstre side, navigation i højre */
+    justify-content: space-between; /*  Logo i venstre side, navigation i højre */
     background-color: #f9f9f9; /* Giver hele footeren en vores 'Off White' baggrund */
     position: sticky; /* Gør at headeren bliver øverst på skærmen, når man scroller */
     top: 0;
     z-index: 1000; /* Sørger for at den ligger øverst i lagene, over alt andet indhold */
 }
-/*  */
+
 .logo img {
     height: 2.75rem; /* Logoet får en fast højde, så det ser ens ud på tværs af skærmstørrelser */
-    padding-left: 1rem; /*  */
+    padding-left: 1rem; /* Sørger for at der er afstand til venstre */
 }
+
 .navigation {
     display: flex;
     justify-content: end; /* Skubber linksene helt til højre */
