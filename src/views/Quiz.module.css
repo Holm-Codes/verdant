@@ -1,56 +1,55 @@
 .quizContainer {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
+    max-width: 62.5rem; /* Maks bredden på containeren */
+    margin: 2.5rem auto;
+    padding: 0 1.25rem;
 }
 
 .quizContainer h1 {
-    text-align: center;
+    text-align: center; /* Centreret tekst */
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .quizContainer p {
-    text-align: center;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    text-align: center; /* Centreret tekst */
+    margin-bottom: 2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
 
 }
 
-.quizContent {
+.quizContent { /* centreret container med mellem */
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
 }
-
 
 .quiz {
     flex: 2;
-    max-width: 700px;
+    max-width: 43.75rem; /* Maks bredden af quizzen */
 }
 
 .question {
     background: #EFE7DA;
-    padding: 30px;
-    border-radius: 15px;
+    padding: 1.875rem;
+    border-radius: 1rem;
     position: relative;
 }
 
 .question p {
     font-family: "Work Sans", sans-serif;
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     font-weight: 500;
 }
 
 .options {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column; /* svarmulighederne over hinanden */
+    gap: 1rem;
 }
 
 .option {
@@ -60,73 +59,73 @@
     cursor: pointer;
 }
 
-.dot {
-    width: 20px;
-    height: 20px;
+.dot { /*  Det giver en rund cirkel (ligesom en radioknap) */
+    width: 1.25rem;
+    height: 1.25rem;
     border: 2px solid #B29079;
     border-radius: 50%;
-    margin-right: 15px;
-    transition: background 0.3s;
+    margin-right: 1rem;
+    transition: background-color 0.3s;
 }
 
-.option.selected .dot {
+.option.selected .dot { /* Dette gør at vis man klikker på en mulighed, bliver den fyldt. */
     background: #B29079;
 }
 
 .nextBtn {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1.25rem;
+    right: 1.25rem;
     background: none;
     border: none;
     color: #B29079;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 .nextBtn:hover:not(:disabled) {
-    background: #DAD3C8(255, 255, 255, 0.1);
+    background: #DAD3C8; /* Dette er farven af pillen, nå man ikke har valgt et af svarmulighederne (og man kan ikke aktivere den) */
 }
 
-.nextBtn:disabled {
+.nextBtn:disabled { /* Dette viser at det ikke er muligt at klikke videre, da der ikke er valgt en svarmulighed */
     opacity: 0.5;
     cursor: not-allowed;
 }
 
-.results {
+.results { /* Styling af resultat containeren */
     background: #EFE7DA;
-    padding: 30px;
-    border-radius: 15px;
+    padding: 1.875rem;
+    border-radius: 1rem;
     text-align: center;
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: 0 auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
 .results h2 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .results p {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 1.25rem;
+    margin-bottom: 1.875rem;
 }
 
-.restartBtn {
+.restartBtn { /* Genstart quizzen knappen */
     background: #DAD3C8;
     color: #000000;
     border: none;
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
