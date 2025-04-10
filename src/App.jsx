@@ -9,17 +9,17 @@ import Kontakt from "./views/Kontakt";
 import Quiz from "./views/Quiz";
 
 
-const router = createBrowserRouter([
+const router = createBrowserRouter([ 
   {
-    path: "/",
+    path: "/", // Dette er hovedruten og viser altid Layout (med Header og Footer)
     element: <Layout />,
-    children: [
+    children: [ // Dette er alle undersider som vises inde i Layout via <Outlet />
       {
-        index: true,
+        index: true, // Dette betyder at DefaultPage er forsiden
         element: <DefaultPage />,
       },
       {
-        path: "/bw",
+        path: "/bw", // Undersider
         element: <Bw />,
       },
       {
@@ -38,18 +38,12 @@ const router = createBrowserRouter([
         path: "/Quiz",
         element: <Quiz />
       },
-      // {
-      //   path: "*",
-      //   element: <NotFound />,
-      // }
     ],
   },
 ]);
 
-function App() {
+export default function App() {
   return (
     <RouterProvider router={router} />
   );
 }
-
-export default App;

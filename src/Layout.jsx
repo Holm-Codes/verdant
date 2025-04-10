@@ -6,8 +6,9 @@ export default function Layout() {
     return (
         <>
             <Header />
+            
             <main className="mainpart">
-                <Outlet />
+                <Outlet /> {/* er en placeholder hvor den aktuelle side-komponent bliver vist */}
             </main>
             <Footer />
         </>
