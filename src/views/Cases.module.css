@@ -4,32 +4,33 @@
     left: 0;
     width: 100%;
     background: #ffffff;
-    z-index: 1000;
+    z-index: 999;
     text-align: center;
-    padding: 3rem 3rem;
-  }
-  
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
 .stickyHeader h1 {
-    font-size: 40px;
+    /* font-size: 40px; */
     margin-bottom: 0.5rem;
     color: #000000;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
 }
-  
+
 .stickyHeader p {
-    max-width: 830px;
+    max-width: 700px;
     margin: 0 auto;
-    font-size: 25px;
+    /* font-size: 25px; */
     line-height: 1.5;
     color: #000000;
     font-family: 'Times New Roman', Times, serif;
 }
-  
-.horizontal-scroll {
+
+.horizontalScroll {
     margin-top: 130px; /* Justér alt efter headerens højde */
 }
-  
+
 .horizontalScroll {
     position: fixed;
     top: 0;
@@ -38,13 +39,13 @@
     width: 100vw;
     overflow: hidden;
 }
-  
+
 .scrollContent {
     display: flex;
     height: 100%;
     width: 300vw; /* 3 paneler á 100vw */
 }
-  
+
 .panel {
     flex: 0 0 100vw;
     height: 100vh;
@@ -53,9 +54,9 @@
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
-  
+
 .panel img {
     width: 40%;
     height: auto;
@@ -63,96 +64,81 @@
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-  
+
 .panel .text {
     max-width: 40%;
-    padding-left: 2rem; /* ← Justér dette tal efter behov */
+    padding-left: 2rem; /* Justér dette tal efter behov */
 }
 
 .panel h2 {
-    font-size: 32px; /* Justér størrelsen */
-    font-weight: 700;  /* Tyk tekst */
+    /* font-size: 32px; */
+    font-weight: 500;
     font-family: 'Work Sans', sans-serif;
-    color: #000000; /* Farve på teksten */
-    margin-bottom: 1rem; /* Afstand fra teksten under */
+    color: #000000;
+    margin-bottom: 1rem;
 }
-  
+
 .panel p {
-    font-size: 22px; /* Lidt mindre tekst */
+    /* font-size: 22px; */
     font-family: 'Times New Roman', Times, serif;
-    line-height: 1.5;  /* Bedre læsbarhed */
-    color: #000000; /* En lysere grå farve for læsbarhed */
-    max-width: 700px; /* Begrænser bredden for bedre layout */
-    margin-bottom: 1rem; /* Afstand til næste element */
+    line-height: 1.5;
+    color: #000000;
+    max-width: 700px;
+    margin-bottom: 1rem;
 }
 
-/* Case-specifik margin-justering */
-.case1 h2 {
-    margin-top: 50px;
-}
-  
-.case2 h2 {
-    margin-top: 60px;
-}
-  
-.case3 h2 {
-    margin-top: 40px;
-}
-
-.cta-button {
+.ctaButton {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.8rem 2rem;
     background-color: #9FC7AA;
-    color: #ffffff;
+    color: #000000;
     border: 0;
     border-radius: 0px 15px 0px 15px;
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
-  
-.cta-button:hover {
-    background-color: #86b194; 
+
+.ctaButton:hover {
+    background-color: #86b194;
 }
 
-/* Baggrundsfarver til hver case */
 .bgBeige {
     background-color: #EFE7DA;
 }
-  
+
 .bgLightgray {
     background-color: #DAD3C8;
 }
-  
+
 .bgSand {
     background-color: #F6F5EC;
 }
-  
+
 .case1 .text {
     align-self: flex-start;
-    margin-top: 280px;
+    margin-top: 160px;
 }
-  
+
 .case2 .text {
     align-self: flex-start;
-    margin-top: 280px;
-    
+    margin-top: 180px;
 }
-  
+
 .case3 .text {
     align-self: flex-start;
-    margin-top: 280px;
-}
-.case3 p {
-    max-width: 85%; /* eller fx 800px, afhængigt af hvad du vil opnå */
+    margin-top: 150px;
 }
 
+.case3 p {
+    max-width: 85%;
+}
 
 .case2 img {
-    width: 55%; /* eller fx 25%, 300px, eller hvad du foretrækker */
+    width: 40%;
 }
 
 .case3 img {
-    margin-top: 60px; /* justér tallet efter ønske */
+    margin-top: 20px;
 }
