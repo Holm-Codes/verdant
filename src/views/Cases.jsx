@@ -1,19 +1,19 @@
-import style from'./Cases.module.css';
+import style from'./Cases.module.css'; // Dette importerer et CSS-modul, så du kan bruge classnames direkte som 'style.xxx'
 import { useEffect, useRef } from "react";
-import case1 from '../image/case1.webp';
+import case1 from '../image/case1.webp'; // Disse billeder er af vores forskellige cases
 import case2 from '../image/case2.webp';
 import case3 from '../image/case3.webp';
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react"; // Bruger en animation via Lottie
 
 
 export default function HorizontalScroll() {
-    const scrollRef = useRef(null);
+    const scrollRef = useRef(null); // bruges til at få adgang til DOM-elementet (den horisontale container), så vi kan styre det med JavaScript.
   
     useEffect(() => {
       const handleScroll = () => {
         const container = scrollRef.current;
         if (container) {
-          container.scrollLeft = window.scrollY;
+          container.scrollLeft = window.scrollY; // Når du scroller nedad (vertical scroll = window.scrollY), flyttes indholdet til venstre (scrollLeft), så det ser ud som om du scroller vandret.
         }
       };
   
@@ -24,23 +24,20 @@ export default function HorizontalScroll() {
     return (
       <>
         {/* Sticky overskrift øverst på siden */}
-        <div className={style.stickyHeader}>
+        <div className={style.stickyHeader}> {/*overskriften forbliver fikseret øverst på siden*/}
           <h1>Se hvordan vi skaber fremtidens web – i dag</h1>
           <p>
             Hos Verdant tror vi på webdesign med omtanke – og det starter med stærke samarbejder. Her kan du gå på opdagelse i vores tidligere projekter, som ikke bare viser, hvad vi kan, men hvad vi kan skabe sammen med fokus på digitale løsninger, der er optimeret til både brugeroplevelse og CO2-aftryk.
           </p>
           <DotLottieReact
-            src="https://lottie.host/9f271a6e-f4b7-487e-a469-617446c9c7be/McHmMKuhz9.lottie"
-            loop
-            autoplay
+            src="https://lottie.host/9f271a6e-f4b7-487e-a469-617446c9c7be/McHmMKuhz9.lottie" loop autoplay
             style={{
               position: 'absolute',
-              height: '175px',
-              width:'350px',
-              top: '100px',
-              left: '95px',
-            }} 
-          />
+              height: '10.938rem',
+              width:'21.875rem',
+              top: '6.25rem',
+              left: '5.938rem',
+            }} />
         </div>
   
         {/* Dummy div med stor højde for at kunne scrolle nedad */}
@@ -50,7 +47,7 @@ export default function HorizontalScroll() {
         <div className={style.horizontalScroll} ref={scrollRef}>
           <div className={style.scrollContent}>
   
-            {/* Panel 1 med unik baggrundsfarve */}
+            {/* Panel 1 med beige baggrundsfarve */}
             <div className={`${style.panel} ${style.bgBeige} ${style.case1}`}>
               <img src={case1} alt="Case 1" />
               <div className={style.text}>
@@ -64,8 +61,8 @@ export default function HorizontalScroll() {
               </div>
             </div>
   
-            {/* Panel 2 med anden baggrundsfarve */}
-            <div className={`${style.panel} ${style.bgLightgray} ${style.case2}`}>
+            {/* Panel 2 med brown baggrundsfarve */}
+            <div className={`${style.panel} ${style.bgLBrown} ${style.case2}`}>
               <img src={case2} alt="Case 2" />
               <div className={style.text}>
                 <h2>Konverteringsfokuseret e-commerce-design</h2>
@@ -78,8 +75,8 @@ export default function HorizontalScroll() {
               </div>
             </div>
   
-            {/* Panel 3 med tredje farve */}
-            <div className={`${style.panel} ${style.bgSand} ${style.case3}`}>
+            {/* Panel 3 med light beige farve */}
+            <div className={`${style.panel} ${style.bgLBeige} ${style.case3}`}>
               <img src={case3} alt="Case 3" />
               <div className={style.text}>
                 <h2>Minimalistisk landing page med tydeligt budskab</h2>

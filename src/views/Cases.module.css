@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .stickyHeader {
     position: fixed;
     top: 0;
@@ -19,16 +23,15 @@
 }
 
 .stickyHeader p {
-    max-width: 700px;
+    max-width: 43.75rem;
     margin: 0 auto;
-    /* font-size: 25px; */
     line-height: 1.5;
     color: #000000;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .horizontalScroll {
-    margin-top: 130px; /* Justér alt efter headerens højde */
+    margin-top: 8.125rem; /* Justér alt efter headerens højde */
 }
 
 .horizontalScroll {
@@ -60,7 +63,7 @@
 .panel img {
     width: 40%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -83,7 +86,7 @@
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     color: #000000;
-    max-width: 700px;
+    max-width: 43.75rem;
     margin-bottom: 1rem;
 }
 
@@ -94,7 +97,7 @@
     background-color: #9FC7AA;
     color: #000000;
     border: 0;
-    border-radius: 0px 15px 0px 15px;
+    border-radius: 0rem 1rem;
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s ease;
@@ -108,27 +111,27 @@
     background-color: #EFE7DA;
 }
 
-.bgLightgray {
+.bgLBrown {
     background-color: #DAD3C8;
 }
 
-.bgSand {
+.bgLBeige {
     background-color: #F6F5EC;
 }
 
 .case1 .text {
     align-self: flex-start;
-    margin-top: 160px;
+    margin-top: 10rem;
 }
 
 .case2 .text {
     align-self: flex-start;
-    margin-top: 180px;
+    margin-top: 11.25rem;
 }
 
 .case3 .text {
     align-self: flex-start;
-    margin-top: 150px;
+    margin-top: 9.375rem;
 }
 
 .case3 p {
@@ -140,5 +143,5 @@
 }
 
 .case3 img {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
