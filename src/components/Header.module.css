@@ -1,26 +1,26 @@
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f9f9f9;
-    position: sticky;
+    display: flex; 
+    flex-direction: row; /* Lægger headeren vandret (row) med flexbox */
+    align-items: center; /* Centrerer elementerne vertikalt */
+    justify-content: space-between; /*  logo i venstre side, navigation i højre */
+    background-color: #f9f9f9; /* Giver hele footeren en vores 'Off White' baggrund */
+    position: sticky; /* Gør at headeren bliver øverst på skærmen, når man scroller */
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* Sørger for at den ligger øverst i lagene, over alt andet indhold */
 }
-
+/*  */
 .logo img {
-    height: 2.75rem;
-    padding-left: 1rem;
+    height: 2.75rem; /* Logoet får en fast højde, så det ser ens ud på tværs af skærmstørrelser */
+    padding-left: 1rem; /*  */
 }
 .navigation {
     display: flex;
-    justify-content: end;
-    align-items: center;
+    justify-content: end; /* Skubber linksene helt til højre */
+    align-items: center; /* Sørger for at de står pænt lodret */
 }
 
 .navigation p {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 500;
-    padding: 0 2rem;
+    font-family: "Work Sans", sans-serif; 
+    font-weight: 500; /* Giver lidt fedme uden at være for tung */
+    padding: 0 2rem; /* Giver luft mellem linksene */
 }
