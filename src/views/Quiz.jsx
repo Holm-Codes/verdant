@@ -4,7 +4,6 @@ import styles from './Quiz.module.css';
 
 
 const questions = [
-    // Indsæt dine spørgsmål her (samme struktur som i den oprindelige kode)
     {
         question: "Hvilken hostingløsning er mest bæredygtig?",
         options: ["Grøn hosting", "Almindelig cloud-hosting", "Lokale servere uden miljøcertificering"],
