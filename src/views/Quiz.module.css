@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .quizContainer {
     max-width: 62.5rem; /* Maks bredden på containeren */
     margin: 2.5rem auto;

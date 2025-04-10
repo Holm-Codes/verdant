@@ -1,38 +1,37 @@
-import style from './OmOs.module.css'
-import gruppe from '../image/gruppebillede.webp'
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import katrine from '../image/katrine.webp'
+import style from './OmOs.module.css' // Dette importerer et CSS-modul, så du kan bruge classnames direkte som 'style.xxx'
+import gruppe from '../image/gruppebillede.webp' // Importer et billede, som bruges i toppen af siden
+import { DotLottieReact } from "@lottiefiles/dotlottie-react"; // Bruger en animation via Lottie
+import katrine from '../image/katrine.webp' // Disse er profilbilleder, som bruges længere nede på siden
 import mie from '../image/mie.webp'
 import ditte from '../image/ditte.webp'
 import lærke from '../image/lærke.webp'
-import KontaktForm from "../components/KontaktForm";
+import KontaktForm from "../components/KontaktForm"; // En ekstern komponent der repræsenterer en kontaktformular
 
-export default function App(){
+export default function App(){ // Dette er hovedkomponenten, som returnerer hele "Om os"-sektionen.
     return (
         <>
-        <section className={style.OmOsHero}>
+        <section className={style.OmOsHero}> {/* Dette er den øverste sektion med gruppebilledet til venstre og introduktionstekst til højre, samt en LottieFile animation, som vises ovenpå layoutet, positioneret absolut */}
             <img src={gruppe} alt="image"/>
                 <div className={style.OmOsHeroTekst}>
                     <h2>Vi skaber bæredygtige hjemmesider til virksomheder</h2>
                     <p>Som et webbureau med fokus på bæredygtighed hjælper vi virksomheder med at styrke deres digitale tilstedeværelse uden at gå på kompromis med miljøet. Vi kombinerer grøn hosting, energieffektiv kodning og æstetisk design for at levere hjemmesider, der både er funktionelle og miljøvenlige. Vores mission er at gøre det nemt for virksomheder at tage ansvar digitalt og samtidig skabe en stærk forbindelse til deres kunder.</p>
                 </div>
-            <DotLottieReact
+            <DotLottieReact //LottieFile animationen
             src="https://lottie.host/9f271a6e-f4b7-487e-a469-617446c9c7be/McHmMKuhz9.lottie"
             loop
             autoplay
             style={{
               position: 'absolute',
-              height: '200px',
-              width:'400px',
-              top: '475px',
-              left: '0px',
+              height: '12.5rem',
+              width:'25rem',
+              top: '21.5rem',
+              left: '0rem',
             }} 
           />
         </section>
-        <h2 className={style.OmOsTitel}>
+        <h2 className={style.OmOsTitel}> {/* Dette er sektionen som præsentere hvert gruppemedlem, med et probillede og en beskrivende tekst */}
             Hvem er vi?
         </h2>
-
          <section className={style.OmOsSektion}>
                 <div className={style.profilBoksOne}>
                     <div className={style.profilTekst}>
@@ -46,11 +45,11 @@ export default function App(){
                             kulisserne er jeres hjemmeside klar til fremtiden.
                         </p>
                     </div>
-                    <img src={katrine} className={style.profilImgOne}></img>
+                    <img src={katrine} className={style.profilImgOne} alt='Profilbillede af Katrine - Backend Developer'></img>
                 </div>
         
                 <div className={style.profilBoksOne}>
-                    <img src={mie} className={style.profilImgTwo}></img>
+                    <img src={mie} className={style.profilImgTwo} alt='Profilbillede af Mie - Frontend Developer'></img>
                     <div className={style.profilTekstTwo}>
                         <h2>
                             Mie – Frontend Developer
@@ -75,11 +74,11 @@ export default function App(){
                             Med Ditte på holdet får jeres visuelle udtryk en grøn og stilfuld dimension.
                         </p>
                     </div>
-                    <img src={ditte} className={style.profilImgTwo}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
+                    <img src={ditte} className={style.profilImgTwo} alt='Profilbillede af Ditte - Grafisk Designer'></img>
                 </div>
         
                 <div className={style.profilBoksOne}>
-                    <img src={lærke} className={style.profilImgOne}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
+                    <img src={lærke} className={style.profilImgOne} alt='Profilbillede af Lærke - Paid Media og Markering Specialist'></img>
                     <div className={style.profilTekstTwo}>
                         <h2>
                             Lærke – Paid Media og Marketing Specialist
@@ -93,7 +92,7 @@ export default function App(){
                     </div>
                 </div>
             </section>
-            <KontaktForm />
+            <KontaktForm /> {/* Dette er den lille kontaktformular komponent */}
             </>
     )
 }

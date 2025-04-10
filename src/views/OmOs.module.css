@@ -1,22 +1,26 @@
+body {
+    margin: 0;
+}
+
 .OmOsHero {
    background-color: #EFE7DA; 
    display: flex;
    flex-direction: row;
    justify-content: center;
+   align-items: center;
    gap: 8rem;
    padding: 3rem 5rem;
 }
 
 .OmOsHero img {
     width: 25rem;
-    border-radius: 0 50px;
-    width: 45%;
+    border-radius: 0 3.125rem;
 }
 
 .OmOsHeroTekst {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
 }
 
 .OmOsHeroTekst h2 {
@@ -42,12 +46,12 @@
 
 .profilImgOne{
     width: 25rem;
-    border-radius: 50px 0;
+    border-radius: 3.125rem 0;
 }
 
 .profilImgTwo{
     width: 25rem;
-    border-radius: 0 50px;
+    border-radius: 0 3.125rem;
 }
 
 .profilBoksOne{

@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .KontaktForm { 
   display: flex;
   flex-direction: row; /* Lægger elementerne vandret (row) med flexbox */

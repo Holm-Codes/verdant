@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 footer {
     background-color: #cfe3d4; /* Giver hele footeren en vores 'light green' baggrund */
     padding: 1rem 2rem; /* Tilføjer indvendig luft (padding): 1rem op/ned og 2rem til siderne */
