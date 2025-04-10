@@ -1,5 +1,11 @@
-body{
-    margin: 0;
+h1 h2 h3 h4 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
 }
 
 /* Intro styling Start*/
@@ -10,6 +16,15 @@ body{
     justify-content: center;
     margin: 0 25rem;
 }
+.bwIntro h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+}
+.bwIntro p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
 /* Intro styling Slut*/
 
 /* Verdant Tilbyder styling Start*/
@@ -24,7 +39,15 @@ body{
 
 .billedeKort{
     text-align: center;
-    
+    padding: 2rem;
+}
+.billedeKort h4 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+}
+.billedeKort p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
 }
 /* Verdant Tilbyder styling Slut*/
 
@@ -38,6 +61,8 @@ body{
 .datatitle{
     display: flex;
     justify-content: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
 }
 
 .dataBilleder{
@@ -73,11 +98,6 @@ flex-direction: row;
 
 .dataCounter{
     display: flex;
-
-}
-
-.dataCounter{
-    display: flex;
     flex-direction: column;
     margin-right: 7rem;
     text-align: center;
@@ -92,10 +112,14 @@ flex-direction: row;
 
 .dataBoks h3{
     margin-bottom: 0px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
 }
 
 .dataBoks p{
     margin-bottom: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
 }
 /* Verdant Data styling Slut*/
 
@@ -108,7 +132,14 @@ flex-direction: row;
 }
 
 .infoSektion h2{
-text-align: center;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+}
+
+.infoSektion p, ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
 }
 
 .infoSektion button{
@@ -126,6 +157,8 @@ text-align: center;
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 4rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
 }
 
 .faktaContainer{
@@ -133,6 +166,7 @@ text-align: center;
     flex-direction: row;
     margin: 0 5rem;
     margin-bottom: 5rem;
+    gap: 30px;
 }
 
 .faktaBoks{
@@ -141,9 +175,10 @@ text-align: center;
 }
 
 .billedeFakta{
-        display: flex;
-        flex-direction: row;
-        margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5rem;
+    align-items: center;
 }
 
 .faktaTekst{
@@ -153,6 +188,8 @@ text-align: center;
 .faktaTekst h4{
     margin-bottom: 0px;
     margin-top: 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
 }
 
 .faktaImg{
