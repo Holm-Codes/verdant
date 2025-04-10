@@ -35,7 +35,7 @@
 }
 
 .check label {
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 .sendKnap {
@@ -44,8 +44,9 @@
   padding: 0.5rem;
 }
 
-.sendKnap button {
+.sendKnapButton {
   background-color: #9FC7AA;
+  font-size: 0.8rem;
   border: 0;
   padding: 0.5rem 2rem;
   border-radius: 15px 0px 15px 0px;

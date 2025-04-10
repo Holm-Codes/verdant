@@ -24,7 +24,7 @@ export default function KontaktForm(){
           Jeg er klar over, at min kontaktinformation vil blive brugt til at kontakte mig om mit forespørgsel. </label></div>
 
         <div className={style.sendKnap}>
-          <button>Send</button>
+          <a href="#" className={style.sendKnapButton}>Læs mere</a>
         </div>
       </div>
     </div>
