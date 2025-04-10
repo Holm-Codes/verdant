@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; // Bruger Link fra react-router-dom, så dine navigationer ikke reloader siden – de fungerer som interne links i en SPA (Single Page Application)
-import style from "./Header.module.css"; // Import af CSS-modul, som ligger filen Header.module.css i samme mapppe. Alle klassenavne hentes som 'style.xxx'.
+import style from "./Header.module.css"; // Dette importerer et CSS-modul, så du kan bruge classnames direkte som 'style.xxx'
 import logo from "../image/Logo.svg" // Importerer vores logo som en SVG-fil. 
 
 export default function Header() { //Her defineres en funktionel komponent i React, som hedder Header, og den bliver eksporteret som standard.

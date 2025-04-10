@@ -1,22 +1,17 @@
-import style from "./DefaultPage.module.css";
-import video from '../video/Gradient.webm';
-import { Link } from "react-router-dom";
-import png from '../image/model.png';
+import style from "./DefaultPage.module.css"; // Dette importerer et CSS-modul, så du kan bruge classnames direkte som 'style.xxx'
+import video from '../video/Gradient.webm'; // Dette er Hero baggrundvideoen
+import { Link } from "react-router-dom"; // Bruger Link fra react-router-dom, så dine navigationer ikke reloader siden – de fungerer som interne links i en SPA (Single Page Application)
+import png from '../image/model.png'; // Disse er billedet der bruge til at vise om man kan se forskel på PNG og WebP
 import webp from '../image/model.webp';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import KontaktForm from "../components/KontaktForm";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react'; // Bruger en animation via Lottie
+import KontaktForm from "../components/KontaktForm"; // En ekstern komponent der repræsenterer en kontaktformular
 
 export default function DefaultPage(){
     return (
        <>
        {/* Forside Sektion 1 - Hero */}
         <section className={style.Hero}>
-            <video src={video} type="video/webm"
-            muted
-            loop
-            autoPlay>
-            </video>
-
+            <video src={video} type="video/webm" muted loop autoPlay></video>
             <div className={style.HeroText}>
                 <h1>Æstetik, performance og ansvarlighed uden kompromiser</h1>
                 <button><Link className={style.linktext} to="/Kontakt">Kontakt os</Link></button>
@@ -37,8 +32,8 @@ export default function DefaultPage(){
             </div>
         
             <div className={style.images}>
-                <img src={png} alt="image"/>
-                <img src={webp} alt="image"/>
+                <img src={png} alt="Modelbillede, der er i png filformat"/>
+                <img src={webp} alt="Modelbillede, der er i webp filformat"/>
             </div>
         </section>
 
@@ -46,10 +41,7 @@ export default function DefaultPage(){
         <section className={style.forside3}>
             <div className={style.animation}>
                 <DotLottieReact
-                src="https://lottie.host/9f271a6e-f4b7-487e-a469-617446c9c7be/McHmMKuhz9.lottie"
-                loop
-                autoplay
-                />
+                src="https://lottie.host/9f271a6e-f4b7-487e-a469-617446c9c7be/McHmMKuhz9.lottie" loop autoplay/>
             </div>
     
             <div className={style.forside3Tekst}>
@@ -87,7 +79,7 @@ export default function DefaultPage(){
             </div> 
         </section>
 
-        <KontaktForm />
+        <KontaktForm /> {/* Dette er den lille kontaktformular komponent */}
         </>
     )
 }

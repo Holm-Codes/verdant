@@ -1,4 +1,4 @@
-import mystyle from "./Footer.module.css"; // Denne importerer CSS-modulet, som ligger filen Footer.module.css i samme mapppe. Alle classNames i CSS-filen bliver samlet i et objekt kaldet mystyle.
+import mystyle from "./Footer.module.css"; // Dette importerer et CSS-modul, så du kan bruge classnames direkte som 'mystyle.xxx'
 
 export default function Footer() { // Her defineres en funktionel komponent i React, som hedder Footer, og den bliver eksporteret som standard
     return (

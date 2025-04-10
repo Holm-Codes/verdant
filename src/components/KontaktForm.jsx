@@ -1,4 +1,4 @@
-import style from './KontaktForm.module.css'; // Import af CSS-modul, som ligger filen KontaktForm.module.css i samme mapppe. Alle klassenavne hentes som 'style.xxx'.
+import style from './KontaktForm.module.css'; // Dette importerer et CSS-modul, så du kan bruge classnames direkte som 'style.xxx'
 
 export default function KontaktForm(){
   function handleSubmit(event) { {/* Denne funktion kører, når brugeren trykker på "Send"-knappen. */}

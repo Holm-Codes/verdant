@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Quiz.module.css';
+import styles from './Quiz.module.css'; // Dette importerer et CSS-modul, så du kan bruge classnames direkte som 'style.xxx'
 
 
 const questions = [ // Dette er et Array med de forskellige spørgsmål, svarmuligheder og hviklet svar som er rigtigt

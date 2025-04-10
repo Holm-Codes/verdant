@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+  }
+
 /* Hero sektion */
 .Hero {
     width: 100%;
@@ -14,7 +18,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 900px;
+    width: 56.25rem;
 }
 .HeroText h1 {
     font-family: "Work Sans", sans-serif;
@@ -26,7 +30,7 @@
     background-color: #9FC7AA;
     border: 0;
     padding: 0.8rem 2rem;
-    border-radius: 0px 15px 0px 15px;
+    border-radius: 0rem 1rem;
 }
 
 /* Billede Sektion */
@@ -34,7 +38,7 @@
     margin: auto;
     padding: 2.5rem 5rem 2.5rem 5rem;
     display: flex;
-    gap: 60px;
+    gap: 3.75rem;
 }
 .textImages h2 {
     font-weight: 500;
@@ -51,7 +55,7 @@
     background-color: #9FC7AA;
     border: 0;
     padding: 0.8rem 2rem;
-    border-radius: 0px 15px 0px 15px;
+    border-radius: 0rem 1rem;
     margin-right: 2rem;
     margin-top: 2rem;
     font-family: "Work Sans", sans-serif;
@@ -60,12 +64,12 @@
 
 .images {
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .images img {
-    height: 500px;
-    border-radius: 10px;
+    height: 31.25rem;
+    border-radius: 0.625rem;
 }
 
 
@@ -74,7 +78,7 @@
     margin: auto;
     padding: 2.5rem 5rem 2.5rem 5rem;
     display: flex;
-    gap: 60px;
+    gap: 3.75rem;
 }
 
 .animation {
@@ -102,7 +106,7 @@
     background-color: #9FC7AA;
     border: 0;
     padding: 0.8rem 2rem;
-    border-radius: 15px 0px 15px 0px;
+    border-radius: 1rem 0rem;
     margin-top: 2rem;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
@@ -130,7 +134,7 @@
 
 .quotes {
     background-color: #EFE7DA;
-    border-radius: 50px 0px 50px 0px;
+    border-radius: 3.125rem 0rem;
     text-align: center;
     padding: 1rem 2rem 1rem 2rem;
 }
@@ -149,7 +153,7 @@
     background-color: #9FC7AA;
     border: 0;
     padding: 0.8rem 2rem;
-    border-radius: 0px 15px 0px 15px;
+    border-radius: 0rem 1rem;
     margin-top: 2rem;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
