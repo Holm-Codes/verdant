@@ -1,24 +1,24 @@
 footer {
-    background-color: #cfe3d4;
-    padding: 1rem 2rem;
-    border-radius: 6px;
+    background-color: #cfe3d4; /* Giver hele footeren en vores light green baggrund */
+    padding: 1rem 2rem; /* Tilføjer indvendig luft (padding): 1rem op/ned og 2rem til siderne */
+    border-radius: 0.4rem; /*Afrunder hjørnerne med border-radius: 0.4rem  */
 }
-
+/*  */
 .bund1 {
-    display: flex;
-    justify-content: space-between;
-    line-height: 0.5;
+    display: flex; /* Flexbox layout – gør at .boks1 og .boks2 står side om side */
+    justify-content: space-between; /* skubber dem ud mod hver sin side */
+    line-height: 0.5; /* tættere linjeafstand, så teksten står kompakt */
 }
 
 .boks1 {
-    padding-left: 2rem;
+    padding-left: 2rem; /* Giver venstre luft (padding) i boksen med kontaktoplysninger */
 }
 
 .boks2 {
-    padding-right: 2rem;
-    text-align: right;
+    padding-right: 2rem; /* Giver højre luft (padding) i info-boksen */
+    text-align: right; /* Teksten står højrejusteret, så den flugter mod højre kant */
 }
 
 .bund2 {
-    text-align: center;
+    text-align: center; /* Den nederste del (© 2025 Verdant) bliver centreret horisontalt */
 }
