@@ -17,3 +17,7 @@
   --soft-red: #F17D70;
   --ligth-red: #F8BEB7;
 }
+
+body {
+  margin: 0;
+}

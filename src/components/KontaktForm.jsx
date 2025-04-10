@@ -16,8 +16,8 @@ export default function KontaktForm(){
         <label htmlFor="fuldeNavn">Fulde navn:</label>
           <input type="text" id="fuldeNavn" required className={style.indhold} />
 
-        <label htmlFor="virksomhed">Virksomhed:</label>
-          <input type="text" id="virksomhed" required className={style.indhold} />
+        <label htmlFor="email">Email:</label>
+          <input type="email" id="email" required className={style.indhold} />
 
         <label htmlFor="problem">Kort om hvad vi kan hjælpe med:</label>
           <textarea id="problem" required className={style.textArea}></textarea>
@@ -29,7 +29,7 @@ export default function KontaktForm(){
         </div>
 
         <div className={style.sendKnap}>
-          <button className={style.sendKnapButton}>Læs mere</button>
+          <button className={style.sendKnapButton}>Send</button>
         </div>
       </form>
     </div>
