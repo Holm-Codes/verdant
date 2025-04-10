@@ -25,7 +25,8 @@ export default function KontaktForm(){
         <div className={style.check}>
         <input type="checkbox" required id="vilkaar" name="vilkaar" value="vilkaar"/>
           <label for="vilkaar" className={style.container}>Jeg accepterer Verdant's vilkår og betingelser.
-          Jeg er klar over, at min kontaktinformation vil blive brugt til at kontakte mig om mit forespørgsel. </label></div>
+          Jeg er klar over, at min kontaktinformation vil blive brugt til at kontakte mig om mit forespørgsel. </label>
+        </div>
 
         <div className={style.sendKnap}>
           <button className={style.sendKnapButton}>Læs mere</button>
