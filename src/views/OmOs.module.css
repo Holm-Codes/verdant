@@ -1,5 +1,31 @@
-body{
-    margin: 0;
+.OmOsHero {
+   background-color: #EFE7DA; 
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 8rem;
+   padding: 3rem 5rem;
+}
+
+.OmOsHero img {
+    width: 25rem;
+    border-radius: 0 50px;
+    width: 45%;
+}
+
+.OmOsHeroTekst {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.OmOsHeroTekst h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+}
+.OmOsHeroTekst p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
 }
 
 .OmOsTitel{

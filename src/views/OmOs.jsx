@@ -1,4 +1,6 @@
 import style from './OmOs.module.css'
+import gruppe from '../image/gruppebillede.webp'
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import katrine from '../image/katrine.webp'
 import mie from '../image/mie.webp'
 import ditte from '../image/ditte.webp'
@@ -8,6 +10,25 @@ import KontaktForm from "../components/KontaktForm";
 export default function App(){
     return (
         <>
+        <section className={style.OmOsHero}>
+            <img src={gruppe} alt="image"/>
+                <div className={style.OmOsHeroTekst}>
+                    <h2>Vi skaber bæredygtige hjemmesider til virksomheder</h2>
+                    <p>Som et webbureau med fokus på bæredygtighed hjælper vi virksomheder med at styrke deres digitale tilstedeværelse uden at gå på kompromis med miljøet. Vi kombinerer grøn hosting, energieffektiv kodning og æstetisk design for at levere hjemmesider, der både er funktionelle og miljøvenlige. Vores mission er at gøre det nemt for virksomheder at tage ansvar digitalt og samtidig skabe en stærk forbindelse til deres kunder.</p>
+                </div>
+            <DotLottieReact
+            src="https://lottie.host/9f271a6e-f4b7-487e-a469-617446c9c7be/McHmMKuhz9.lottie"
+            loop
+            autoplay
+            style={{
+              position: 'absolute',
+              height: '200px',
+              width:'400px',
+              top: '475px',
+              left: '0px',
+            }} 
+          />
+        </section>
         <h2 className={style.OmOsTitel}>
             Hvem er vi?
         </h2>
