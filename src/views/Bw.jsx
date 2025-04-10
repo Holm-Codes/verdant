@@ -1,6 +1,6 @@
-import { DotLottieReact } from '@lottiefiles/dotlottie-react'
-import style from './Bw.module.css'
-import mindreCo from '../image/mindreCo.webp'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react' // Bruger en animation via Lottie
+import style from './Bw.module.css' // Dette importerer et CSS-modul, så du kan bruge classnames direkte som 'style.xxx'
+import mindreCo from '../image/mindreCo.webp' // Disse er billeder der fremgår på siden
 import hurtigereLoading from '../image/hurtigereLoading.webp'
 import bedreOkonomi from '../image/bedreOkonomi.webp'
 import staekereprofil from '../image/staekereProfil.webp'
@@ -10,17 +10,15 @@ import sellPointOne from '../image/sellPointOne.webp'
 import sellPointTwo from '../image/sellPointTwo.webp'
 import sellPointThree from '../image/sellPointThree.webp'
 import sellPointFour from '../image/sellPointFour.webp'
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Bruger Link fra react-router-dom, så dine navigationer ikke reloader siden – de fungerer som interne links i en SPA (Single Page Application)
 
 export default function App(){
     return (
         <>
-        <section >
-            <div  className={style.bwIntro}>
+        <div  className={style.bwIntro}> {/* CO2-neutralt webdesign introduktion sektion */}
             <h1>
                 En hurtigere, smartere og grønnere hjemmeside
             </h1>
-
             <p>
                 Vidste du, at internettet i dag udleder lige så meget CO₂ som hele verdens flytrafik?
                 Hver gang en hjemmeside loader, bruges der energi – og jo tungere din side er, jo mere strøm kræver det.
@@ -28,111 +26,103 @@ export default function App(){
                 Vi hjælper dig med at optimere din hjemmeside, så den loader hurtigere, sparer energi,
                 og giver en bedre oplevelse for dine kunder – uden at du går på kompromis med det visuelle udtryk eller kvaliteten af dine billeder.
             </p>
+        </div>
+
+        <section className={style.billederSektion}> {/* Øverste billede sektion  */}
+            <div className={style.billedeKort}>
+                <img src={mindreCo}></img>
+                <h4>
+                    Mindre CO₂-aftryk
+                </h4>
+                <p>
+                    Reducér energiforbruget uden at miste æstetik.
+                </p>
+            </div>
+
+            <div className={style.billedeKort}>
+                <img src={hurtigereLoading}></img>
+                <h4>
+                    Hurtigere loadtider
+                </h4>
+                <p>
+                    Få glade kunder og bedre placeringer på Google.
+                </p>
+            </div>
+
+            <div className={style.billedeKort}>
+                <img src={bedreOkonomi}></img>
+                <h4>
+                    Bedre økonomi
+                </h4>
+                <p>
+                    Færre tunge filer = mindre serveromkostninger.
+                </p>
+            </div>
+
+            <div className={style.billedeKort}>
+                <img src={staekereprofil}></img>
+                <h4>
+                    En stærkere profil 
+                </h4>
+                <p>
+                    Mød dine kunders forventninger om ansvarlige valg.
+                </p>
             </div>
         </section>
 
-    <section className={style.billederSektion}>
-        <div className={style.billedeKort}>
-            <img src={mindreCo}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
-            <h4>
-                Mindre CO₂-aftryk
-            </h4>
-            <p>
-                Reducér energiforbruget uden at miste æstetik.
-            </p>
-        </div>
+        <h3 className={style.datatitle}>
+            Indtil videre har vi hjulpet vores kunder med at spare:
+        </h3>
 
-        <div className={style.billedeKort}>
-            <img src={hurtigereLoading}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
-            <h4>
-                Hurtigere loadtider
-            </h4>
-            <p>
-                Få glade kunder og bedre placeringer på Google.
-            </p>
-        </div>
+        <section className={style.dataSektion}> {/* Data sektion */}
+            <div className={style.dataBilleder}> {/* Billederne i data sektion */}
+                <div className={style.dataBilledVerdant}> {/* Billedet af hænderne, samt LottieFile animation */}
+                    <img src={dataPicOne} className={style.dataBillederImg}></img>
+                    <div className={style.verdantRing}> {/* LottieFile animation */}
+                        <DotLottieReact
+                        src="https://lottie.host/9f271a6e-f4b7-487e-a469-617446c9c7be/McHmMKuhz9.lottie" loop autoplay/>
+                    </div>
+                </div>
+                <img src={dataPicTwo} className={style.dataBillederImgTwo} ></img> {/* Billedet af ipads */}
+            </div>
 
-        <div className={style.billedeKort}>
-            <img src={bedreOkonomi}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
-            <h4>
-                Bedre økonomi
-            </h4>
-            <p>
-                Færre tunge filer = mindre serveromkostninger.
-            </p>
-        </div>
-
-        <div className={style.billedeKort}>
-            <img src={staekereprofil}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
-            <h4>
-                En stærkere profil 
-            </h4>
-            <p>
-                Mød dine kunders forventninger om ansvarlige valg.
-            </p>
-        </div>
-    </section>
-
-    <h3 className={style.datatitle}>
-                Indtil videre har vi hjulpet vores kunder med at spare:
-            </h3>
-
-    <section className={style.dataSektion}>
-        <div className={style.dataBilleder}>
-            <div className={style.dataBilledVerdant}>
-                <img src={dataPicOne} className={style.dataBillederImg}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
-                <div className={style.verdantRing}>
-                    <DotLottieReact
-                    src="https://lottie.host/9f271a6e-f4b7-487e-a469-617446c9c7be/McHmMKuhz9.lottie"
-                    loop
-                    autoplay
-                    />
+            <div className={style.dataCounter}> {/* Data bokse sektion */}
+                <div className={style.dataBoks}>
+                    <h3>
+                        18 ton CO₂
+                    </h3>
+                    <p>
+                        Svarende til 120 flyrejser mellem København og London.
+                    </p>
+                </div>
+                <div className={style.dataBoks}>
+                    <h3>
+                        32.000 kWh energi
+                    </h3>
+                    <p>
+                        nok til at drive 10 husstande i et år.
+                    </p>
+                </div>
+                <div className={style.dataBoks}>
+                    <h3>
+                        1,2 TB data i gennemsnit
+                    </h3>
+                    <p>
+                        hvilket gør deres hjemmesider hurtigere end 90% af konkurrenterne.
+                    </p>
+                </div>
+                <div className={style.dataBoks}>
+                    <h3>
+                        45 % forbedret loadtid
+                    </h3>
+                    <p>
+                        hvilket har øget deres salg og brugertilfredshed.
+                    </p>
                 </div>
             </div>
-            <img src={dataPicTwo} className={style.dataBillederImgTwo} ></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
-        </div>
+        </section>
 
-        <div className={style.dataCounter}>
-            <div className={style.dataBoks}>
-                {/* Indsæt lottie datatæller fil her*/}
-                <h3> {/* Slet denne når data animation bliver sat ind.*/}
-                    18 ton CO₂
-                </h3>
-                <p>
-                    Svarende til 120 flyrejser mellem København og London.
-                </p>
-            </div>
-            <div className={style.dataBoks}>
-                {/* Indsæt lottie datatæller fil her*/}
-                <h3>{/* Slet denne når data animation bliver sat ind.*/}
-                    32.000 kWh energi
-                </h3>
-                <p>
-                    nok til at drive 10 husstande i et år.
-                </p>
-            </div>
-            <div className={style.dataBoks}>
-                {/* Indsæt lottie datatæller fil her*/}
-                <h3>{/* Slet denne når data animation bliver sat ind.*/}
-                    1,2 TB data i gennemsnit
-                </h3>
-                <p>
-                    hvilket gør deres hjemmesider hurtigere end 90% af konkurrenterne.
-                </p>
-            </div>
-            <div className={style.dataBoks}>
-                {/* Indsæt lottie datatæller fil her*/}
-                <h3>{/* Slet denne når data animation bliver sat ind.*/}
-                    45 % forbedret loadtid
-                </h3>
-                <p>
-                    hvilket har øget deres salg og brugertilfredshed.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section className={style.infoSektion}>
+    <section className={style.infoSektion}> {/* Informations sektion */}
       <h2>
         CO₂-optimeret webdesign – godt for både din forretning og miljøet
       </h2>
@@ -142,7 +132,7 @@ export default function App(){
         bruges der energi, og jo tungere din side er, desto mere strøm kræver den.
       </p>
       <p>Men der er en løsning! Ved at optimere din hjemmeside kan du:</p>
-      <ul className={style.listeEksempler}> {/* Måske brug emojis?*/}
+      <ul className={style.listeEksempler}>
         <li>Reducere strømforbruget uden at gå på kompromis med kvaliteten.</li>
         <li>Opnå hurtigere loadtider, hvilket giver en bedre brugeroplevelse.</li>
         <li>Imødekomme kundernes forventninger om ansvarlig digital adfærd.</li>
@@ -153,17 +143,17 @@ export default function App(){
         Vi optimerer billeder, kode og serverforbindelser, så du får en hurtigere og grønnere hjemmeside – 
         uden at miste din visuelle identitet.
       </p>
-      <button><Link className={style.linktext} to="/Kontakt">Kontakt os</Link></button>
+      <button><Link className={style.linktext} to="/Kontakt">Kontakt os</Link></button> {/* Intern link til Kontakt side */}
     </section>
 
-    <section>
+    <section> {/* Nederste billede sektion */}
         <h2 className={style.faktaTitel}>
             En hurtigere og mere effektiv hjemmeside gavner både miljøet og din forretning
         </h2>
         <div className={style.faktaContainer}>
             <div className={style.faktaBoks}>
                 <div className={style.billedeFakta}>
-                    <img src={sellPointOne} className={style.faktaImg}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
+                    <img src={sellPointOne} className={style.faktaImg}></img>
                     <div className={style.faktaTekst}>
                         <h4>
                             Internettet står for ca. 3-4% af verdens CO₂-udledning – og tallet stiger
@@ -179,7 +169,7 @@ export default function App(){
                 </div>
 
                 <div className={style.billedeFakta}>
-                    <img src={sellPointTwo} className={style.faktaImg}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
+                    <img src={sellPointTwo} className={style.faktaImg}></img>
                     <div className={style.faktaTekst}>
                         <h4>
                             En unødvendigt tung hjemmeside kan bruge op til 10x mere strøm end en optimeret version
@@ -196,7 +186,7 @@ export default function App(){
 
             <div className={style.faktaBoks}>
                 <div className={style.billedeFakta}>
-                    <img src={sellPointThree} className={style.faktaImg}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
+                    <img src={sellPointThree} className={style.faktaImg}></img>
                     <div className={style.faktaTekst}>
                         <h4>
                             1 sekunds langsommere loadtid kan reducere salget med 7%
@@ -210,7 +200,7 @@ export default function App(){
                 </div>
 
                 <div className={style.billedeFakta}>
-                    <img src={sellPointFour} className={style.faktaImg}></img> {/* Husk at tilføje "import billede from './assets/xyz.jpg'" og indsæt billede i assets mappe */}
+                    <img src={sellPointFour} className={style.faktaImg}></img>
                     <div className={style.faktaTekst}>
                         <h4>
                             Over 70% af forbrugerne foretrækker at handle hos brands, der tager bæredygtige valg
@@ -227,7 +217,7 @@ export default function App(){
         </div>
     </section>
     <div className={style.quizlink}>
-        <button><Link className={style.linktext} to="/Quiz">Tag quizzen</Link></button>
+        <button><Link className={style.linktext} to="/Quiz">Tag quizzen</Link></button> {/* Intern link til Quiz side */}
     </div>
     </>
     )
