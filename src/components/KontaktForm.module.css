@@ -49,5 +49,7 @@
   font-size: 0.8rem;
   border: 0;
   padding: 0.5rem 2rem;
-  border-radius: 15px 0px 15px 0px;
+  border-radius: 1rem 0;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
 }

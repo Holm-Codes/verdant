@@ -1,17 +1,18 @@
-import mystyle from "./Footer.module.css";
+import mystyle from "./Footer.module.css"; // Denne importerer CSS-modulet, som ligger filen Footer.module.css i samme mapppe. Alle classNames i CSS-filen bliver samlet i et objekt kaldet mystyle.
 
-export default function Footer() {
-
+export default function Footer() { // Her defineres en funktionel komponent i React, som hedder Footer, og den bliver eksporteret som standard
     return (
-        <footer>
-            <div className={mystyle.bund1}>
-                <div className={mystyle.boks1}>
-                    <h3>Kontakt</h3>
+        <footer> 
+            {/* Her begynder selve HTML-udskriften. Der returneres et <footer>-element, som er en semantisk HTML-tag til indhold i bunden af siden. */}
+            
+            <div className={mystyle.bund1}> {/* Et div-element får klassen bund1 fra det importerede CSS-modul (mystyle.bund1). Det er her, den første del af footerens layout begynder. */}
+                <div className={mystyle.boks1}> {/* Første boks i footer-sektionen. Indeholder kontaktinformationer. */}
+                    <h3>Kontakt</h3> {/* Tekstvisning med kontaktoplysninger. */}
                     <p>Sønderhøj 30, 8260 Viby J</p>
                     <p>Info@Verdant.dk</p>
                     <p>+45 12 34 56 78</p>
                 </div>
-                <div className={mystyle.boks2}>
+                <div className={mystyle.boks2}> {/* Anden boks – denne med info som CVR og politikker. */}
                     <h3>Info</h3>
                     <p>CVR: 123456</p>
                     <p>Cookies- og privatpolitik</p>
@@ -19,9 +20,10 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className={mystyle.bund2}>
+            <div className={mystyle.bund2}> {/* En separat div nederst med copyright. */}
                 &copy; 2025 Verdant
             </div>
         </footer>
     )
 }
+
