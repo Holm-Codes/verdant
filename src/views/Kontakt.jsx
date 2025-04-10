@@ -1,6 +1,11 @@
 import mystyle from "./Kontakt.module.css";
 
 export default function Kontakt(){
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert("Tak fordi du valgt os, vi vender tilbage til dig så hurtigst muligt, normalt indenfor 2-3 arbejdesdage :)");
+  }
+
     return (
         <div className={mystyle.container}>
       <h2>KONTAKT OS</h2>
@@ -9,7 +14,8 @@ export default function Kontakt(){
         Udfyld vores kontaktformular nedenfor, eller kontakt os på 12 34 56 78 eller <a href="mailto:Info@verdant.dk">Info@verdant.dk</a>.
         Vi ser frem til at høre fra dig!
       </p>
-      <div className={mystyle.formContainer}>
+
+      <form onSubmit={handleSubmit} className={mystyle.formContainer}>
         <h3 className={mystyle.formTitle}>KONTAKT FORMULAR</h3>
       
         <label htmlFor="fuldeNavn">Fulde navn:</label>
@@ -30,7 +36,7 @@ export default function Kontakt(){
         <button className={mystyle.formContainerButton}>
           Kontakt
         </button>
-      </div>
+      </form>
     </div>
     )
 }
