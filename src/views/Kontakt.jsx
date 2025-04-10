@@ -13,19 +13,19 @@ export default function Kontakt(){
         <h3 className={mystyle.formTitle}>KONTAKT FORMULAR</h3>
       
         <label htmlFor="fuldeNavn">Fulde navn:</label>
-        <input type="text" id="fuldeNavn" className={mystyle.input} />
+        <input type="text" id="fuldeNavn" required className={mystyle.input} />
 
         <label htmlFor="virksomhed">Virksomhed:</label>
-        <input type="text" id="virksomhed" className={mystyle.input} />
+        <input type="text" id="virksomhed" required className={mystyle.input} />
 
         <label htmlFor="telefonNr">Telefon nr.:</label>
-        <input type="tel" id="telefonNr" className={mystyle.input} />
+        <input type="tel" id="telefonNr" required className={mystyle.input} />
 
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" className={mystyle.input} />
+        <input type="email" id="email" required className={mystyle.input} />
 
         <label htmlFor="problem">Kort om jeres problem:</label>
-        <textarea id="problem" className={mystyle.textarea}></textarea>
+        <textarea id="problem" required className={mystyle.textarea}></textarea>
 
         <button className={mystyle.formContainerButton}>
           Kontakt
