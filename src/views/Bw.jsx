@@ -10,6 +10,7 @@ import sellPointOne from '../image/sellPointOne.webp'
 import sellPointTwo from '../image/sellPointTwo.webp'
 import sellPointThree from '../image/sellPointThree.webp'
 import sellPointFour from '../image/sellPointFour.webp'
+import { Link } from "react-router-dom";
 
 export default function App(){
     return (
@@ -152,9 +153,7 @@ export default function App(){
         Vi optimerer billeder, kode og serverforbindelser, så du får en hurtigere og grønnere hjemmeside – 
         uden at miste din visuelle identitet.
       </p>
-      <button className={style.infoBtn}>
-        Kontakt os
-      </button>
+      <button><Link className={style.linktext} to="/Kontakt">Kontakt os</Link></button>
     </section>
 
     <section>
@@ -227,8 +226,9 @@ export default function App(){
             </div>
         </div>
     </section>
-
-    {/* Indsæt Lærkes Quiz her*/}
+    <div className={style.quizlink}>
+        <button><Link className={style.linktext} to="/Quiz">Tag quizzen</Link></button>
+    </div>
     </>
     )
 }

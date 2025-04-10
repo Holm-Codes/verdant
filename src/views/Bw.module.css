@@ -111,13 +111,13 @@ flex-direction: row;
 text-align: center;
 }
 
-.infoBtn{
+.infoSektion button{
     border-radius: 0 10px;
     background-color: #B5D1BB;
     border: none;
     padding: 0.5rem 2rem;
     align-self: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 /* Info styling slut*/
 
@@ -162,3 +162,16 @@ text-align: center;
 
 /* Fakta styling Slut*/
 
+/* CTA til Quiz */
+.quizlink {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.quizlink button {
+    background-color: #9FC7AA;
+    border: 0;
+    padding: 0.8rem 2rem;
+    border-radius: 0px 15px 0px 15px;
+}
