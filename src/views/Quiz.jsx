@@ -58,7 +58,6 @@ const questions = [
 ];
 
 export default function Quiz() {
-    
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [selectedOption, setSelectedOption] = useState(null);
